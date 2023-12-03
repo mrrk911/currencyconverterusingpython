@@ -39,7 +39,7 @@ def show_data():
         cc = data['rates'][currency]
         cur_conv = cc * amount
         E2.insert(0, cur_conv)
-        text.insert('end',f'{amount} United States Dollar Equals to :{cur_conv} \n Last Time Update --- \t {datetime.now()}\n\n')
+        text.insert('end',f'{amount} United States Dollar Equals to :{cur_conv} {to_currency}\n Last Time Update --- \t {datetime.now()}\n\n')
 
 
 def clear():
